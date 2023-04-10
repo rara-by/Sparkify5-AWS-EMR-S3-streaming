@@ -44,6 +44,7 @@ vim test.json
 cat test.json | ./mapper.py | sort | ./reducer.py 
 ```
 Output (count most frequently played artists)
+
 ![image](https://user-images.githubusercontent.com/63100531/230808731-92c71e90-d33d-4b7d-91a8-88243266c808.png)
 
 #### Step 3: Running a streaming step
