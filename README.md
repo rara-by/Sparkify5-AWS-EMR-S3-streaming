@@ -1,7 +1,7 @@
 ### DSCI6007 Sparkify Lab 5
 
-In this lab we scale out using multiple nodes (instances) using Hadoop. A key difference with IPython parallel is that Hadoop is not interactive, it works with batch processes. So in Hadoop, we wrap the processes in a map and a reduce step. 
-
+In this lab we scale out using multiple nodes (instances) using Hadoop. A key difference with IPython parallel is that Hadoop is not interactive, it works with batch processes. So in Hadoop, we wrap the processes in a map and a reduce step.
+#### **Hadoop**
 #### Step 1: Create a Hadoop cluster. 
 
 The Hadoop cluster is created in AWS EMR with the following configuration:
@@ -45,7 +45,7 @@ cat test.json | ./mapper.py | sort | ./reducer.py
 ```
 Output (count most frequently played artists)
 
-![image](https://user-images.githubusercontent.com/63100531/230808731-92c71e90-d33d-4b7d-91a8-88243266c808.png)
+<img src="https://user-images.githubusercontent.com/63100531/230808731-92c71e90-d33d-4b7d-91a8-88243266c808.png" width="150">
 
 #### Step 3: Running a streaming step
 - upload the code files to a different S3 bucket
@@ -55,9 +55,8 @@ aws s3 cp mapper.py s3://emr-mapper-reducer/
 aws s3 cp reducer.py s3://emr-mapper-reducer/
 ```
 - Test a streaming jon under the *Steps* tab
-![image](https://user-images.githubusercontent.com/63100531/230809528-36f0fa72-43c1-4766-9238-c0141b52fa89.png)
+<img src="https://user-images.githubusercontent.com/63100531/230809528-36f0fa72-43c1-4766-9238-c0141b52fa89.png" width="450">
 The output folder cannot be an existing folder.
 The output is in parts:
-
-![image](https://user-images.githubusercontent.com/63100531/230810401-62cde770-1453-4166-bb7d-723218723047.png)
+<img src="https://user-images.githubusercontent.com/63100531/230810401-62cde770-1453-4166-bb7d-723218723047.png" width="480">
 
