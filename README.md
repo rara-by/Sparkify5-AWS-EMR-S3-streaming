@@ -1,8 +1,8 @@
-#### DSCI6007 Sparkify Lab 5
+### DSCI6007 Sparkify Lab 5
 
 In this lab we scale out using multiple nodes (instances) using Hadoop. A key difference with IPython parallel is that Hadoop is not interactive, it works with batch processes. So in Hadoop, we wrap the processes in a map and a reduce step. 
 
-##### Step 1: Create a Hadoop cluster. 
+#### Step 1: Create a Hadoop cluster. 
 
 The Hadoop cluster is created in AWS EMR with the following configuration:
 
@@ -13,7 +13,7 @@ The Hadoop cluster is created in AWS EMR with the following configuration:
 
 When the status is *waiting* the cluster is ready to use. Edit inbound rules in the Security Group to enable SSH.
 
-###### Step 2: Create Mapper and Reducer Scripts
+#### Step 2: Create Mapper and Reducer Scripts
 
 - Follow the *Enable an SSH Connection* instructions under the *Application User Interfaces* tab to SSH into the master node of the EMR cluster. 
 ```
@@ -46,7 +46,7 @@ cat test.json | ./mapper.py | sort | ./reducer.py
 Output (count most frequently played artists)
 ![image](https://user-images.githubusercontent.com/63100531/230808731-92c71e90-d33d-4b7d-91a8-88243266c808.png)
 
-##### Step 3: Running a streaming step
+#### Step 3: Running a streaming step
 - upload the code files to a different S3 bucket
 ```
 aws configure
