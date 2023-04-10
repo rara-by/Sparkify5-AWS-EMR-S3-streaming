@@ -57,3 +57,7 @@ aws s3 cp reducer.py s3://emr-mapper-reducer/
 - Test a streaming jon under the *Steps* tab
 ![image](https://user-images.githubusercontent.com/63100531/230809528-36f0fa72-43c1-4766-9238-c0141b52fa89.png)
 The output folder cannot be an existing folder.
+The output is in parts:
+
+![image](https://user-images.githubusercontent.com/63100531/230810401-62cde770-1453-4166-bb7d-723218723047.png)
+
